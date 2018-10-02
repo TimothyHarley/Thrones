@@ -1,5 +1,6 @@
-const helpers = () => {
-    console.log ('util.js is connected')
-}
+const printToDom = (stringToPrint, divId) => {
+    const selectedDiv = document.getElementById(divId);
+    selectedDiv.innerHTML = stringToPrint;
+};
 
-export {helpers}
+export {printToDom}

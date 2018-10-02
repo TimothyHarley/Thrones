@@ -1,11 +1,9 @@
-import {helpers} from './helpers/util.js';
-import {characters} from './components/characters.js';
-import {details} from './components/details.js';
+import {printToDom} from './helpers/util.js';
+import {charactersBuilder} from './components/characters.js'
 
 const initApp = () => {
-    console.log('main.js is connected');
-    helpers();
-    characters();
+    charactersBuilder();
+    
     
 }
 
