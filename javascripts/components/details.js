@@ -22,4 +22,9 @@ const characterDatas = [
 
 ];
 
-export {characterDatas}
+const detailsBuilder = (character) => {
+    console.log('character inside details', character)
+}
+
+export {characterDatas, detailsBuilder}
+
