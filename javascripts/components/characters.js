@@ -16,22 +16,23 @@ const charactersBuilder = () => {
     createEvents();
 }
 
-const characterClick = (e) => {
-    // console.log(e.target);
-    // console.log(e.target.closest('.characterCard').id);
-    const characterId = e.target.closest('.characterCard').id
-    const currentCharacter = characterDatas.find(x => x.id === characterId);
-    detailsBuilder(currentCharacter);
-}
-
 const createEvents = () => {
     const characterCards = document.getElementsByClassName('characterCard');
     for(let i=0; i<characterCards.length; i++){
-        // characterCards[i].addEventListener('click', characterCards);
+        // characterCards[i].addEventListener('click', characterCards);  This should work as an alt to the line below...
         characterCards[i].addEventListener('click', (e) => {
             characterClick(e);
         })
     }
 }
+
+const characterClick = (e) => {
+    // console.log(e.target);  testing functions
+    // console.log(e.target.closest('.characterCard').id); testing functions
+    const characterId = e.target.closest('.characterCard').id
+    const currentCharacter = characterDatas.find(x => x.id === characterId); //Im not entirely sure what's happening here
+    detailsBuilder(currentCharacter);
+}
+
 
 export {charactersBuilder}
