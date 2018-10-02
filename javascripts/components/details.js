@@ -1,5 +1,6 @@
-const details = () => {
-    console.log ('details.js is connected')
-}
-
-export {details}
+characterDatas = [
+    {id:'character1', 
+    name: 'Jon Snow', 
+    house: 'Stark', 
+    imageUrl: 'blablabla'}
+]
