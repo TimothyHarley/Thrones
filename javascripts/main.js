@@ -6,7 +6,7 @@ const initApp = () => {
     console.log('main.js is connected');
     helpers();
     characters();
-    details();
+    
 }
 
 initApp();

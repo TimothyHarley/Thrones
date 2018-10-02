@@ -1,5 +1,18 @@
-const details = () => {
-    console.log ('details.js is connected')
-}
-
-export {details}
+characterDatas = [
+    {id:'character1', 
+    name: 'Jon Snow', 
+    house: 'Stark', 
+    imageUrl: 'SoIaF.jpg'},
+    {id:'character2', 
+    name: 'Tony', 
+    house: 'Stark', 
+    imageUrl: 'SoIaF.jpg'},
+    {id:'character3', 
+    name: 'Cercie', 
+    house: 'Lannister', 
+    imageUrl: 'SoIaF.jpg'},
+    {id:'character4', 
+    name: 'Rahgar', 
+    house: 'Targarian', 
+    imageUrl: 'SoIaF.jpg'},
+]
