@@ -1,3 +1,5 @@
+import { printToDom } from "../helpers/util.js";
+
 const characterDatas = [
     {id:'character1', 
     name: 'Jon Snow', 
@@ -15,6 +17,29 @@ const characterDatas = [
     name: 'Rhaegar Targarian', 
     house: 'Targarian', 
     imageUrl: 'SoIaF.jpg'},
+    {id:'character5', 
+    name: 'Tyrion Lannister', 
+    house: 'Lannister', 
+    imageUrl: 'SoIaF.jpg'},
+
 ];
 
-export {characterDatas}
+const detailsBuilder = (character) => {
+    console.log('character inside details', character)
+    let domString = ''; //personal preference.  must experiment to see why
+    domString += `<div class="col-6 offset-md-3">`
+    domString +=   `<div class="row">`
+    domString +=     `<div class="col">`
+    domString +=       `<img src="${character.imageUrl}" alt="${character.name}"`
+    domString +=     `</div>`
+    domString +=     `<div class="col">`
+    domString +=       `<h1>${character.name}</h1>`
+    domString +=       `<h2>${character.house}</h2>`
+    domString +=     `</div>`
+    domString +=   `</div>`
+    domString += `</div>`
+    printToDom(domString, 'printDiv');
+}
+
+export {characterDatas, detailsBuilder}
+
