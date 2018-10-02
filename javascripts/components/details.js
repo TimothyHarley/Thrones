@@ -15,6 +15,11 @@ const characterDatas = [
     name: 'Rhaegar Targarian', 
     house: 'Targarian', 
     imageUrl: 'SoIaF.jpg'},
+    {id:'character5', 
+    name: 'Tyrion Lannister', 
+    house: 'Lannister', 
+    imageUrl: 'SoIaF.jpg'},
+
 ];
 
 export {characterDatas}
