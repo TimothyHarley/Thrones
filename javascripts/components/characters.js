@@ -16,8 +16,12 @@ const sortPeople = (e) => {
 const sortEvents = () => {
     const allButton = document.getElementById('All');
     const starkButton = document.getElementById('Stark');
+    const lannButton = document.getElementById('Lannister');
+    const targButton = document.getElementById('Targaryan');
     allButton.addEventListener('click', sortPeople);
     starkButton.addEventListener('click', sortPeople);
+    lannButton.addEventListener('click', sortPeople);
+    targButton.addEventListener('click', sortPeople);
 };
 
 const charactersBuilder = (characterArray) => {
