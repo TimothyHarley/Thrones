@@ -16,6 +16,7 @@ const charactersBuilder = () => {
     createEvents();
 }
 
+
 const createEvents = () => {
     const characterCards = document.getElementsByClassName('characterCard');
     for(let i=0; i<characterCards.length; i++){

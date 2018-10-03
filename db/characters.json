@@ -1,0 +1,61 @@
+{
+    "characters": [
+        {
+            "id":"character1", 
+            "name": "Jon Snow", 
+            "house": "Stark", 
+            "imageUrl": "SoIaF.jpg"
+        },
+        {
+            "id":"character2", 
+            "name": "Tony Stark", 
+            "house": "Stark", 
+            "imageUrl": "SoIaF.jpg"
+        },
+        {
+            "id":"character3", 
+            "name": "Cersei Lannister", 
+            "house": "Lannister", 
+            "imageUrl": "SoIaF.jpg"
+        },
+        {
+            "id":"character4", 
+            "name": "Rhaegar Targaryan", 
+            "house": "Targaryan", 
+            "imageUrl": "SoIaF.jpg"
+        },
+        {
+            "id":"character5", 
+            "name": "Tyrion Lannister", 
+            "house": "Lannister", 
+            "imageUrl": "SoIaF.jpg"
+        },
+        {
+            "id":"character6", 
+            "name": "Daenerys Targaryen", 
+            "house": "Targaryan", 
+            "imageUrl": "SoIaF.jpg"
+        },
+        {
+            "id":"character7", 
+            "name": "Arya Stark", 
+            "house": "Stark", 
+            "imageUrl": "SoIaF.jpg"
+        },{
+            "id":"character8", 
+            "name": "Jaime Lannister", 
+            "house": "Lannister", 
+            "imageUrl": "SoIaF.jpg"
+        },{
+            "id":"character9", 
+            "name": "Sansa Stark", 
+            "house": "Stark", 
+            "imageUrl": "SoIaF.jpg"
+        },{
+            "id":"character10", 
+            "name": "Tywin Lannister", 
+            "house": "Lannister", 
+            "imageUrl": "SoIaF.jpg"
+        }
+    ]
+}
