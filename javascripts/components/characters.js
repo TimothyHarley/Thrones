@@ -2,32 +2,27 @@ import {characterDatas} from './details.js';
 import {printToDom} from '../helpers/util.js';
 import {detailsBuilder} from './details.js';
 
-const createEvents = () => {
-    const characterCards = documnet.getElementsByClassName('character-card');
-    for(let i=0; i<characterCards.length; i++){
-        characterCards[i].addEventListener('click', characterClick);
-    }
-};
 
 const sortPeople = (e) => {
-    const house = e.target.id
-    if(house === 'ALL'){
-        charactersBuilder(characters)
+    const house = e.target.id;
+    if(house === 'All'){
+        charactersBuilder(characterDatas);
     } else {
-    const filterPeeps = characters.filter(x => x.house === house);
+    const filterPeeps = characterDatas.filter(x => x.house === house);
     charactersBuilder(filterPeeps);
     }
-
 };
 
 const sortEvents = () => {
-    const addEventListener 
-}
+    const allButton = document.getElementById('All');
+    const starkButton = document.getElementById('Stark');
+    allButton.addEventListener('click', sortPeople);
+    starkButton.addEventListener('click', sortPeople);
+};
 
-
-const charactersBuilder = () => {
+const charactersBuilder = (characterArray) => {
     let domString = '';
-    characterDatas.forEach((character) => {
+    characterArray.forEach((character) => {
         domString += `<div class="card col-3 mr-1 characterCard" id='${character.id}'>`
         domString +=  `<img class="card-img-top" src="${character.imageUrl}" alt="${character.name}">`
         domString +=  `<div class="card-body">`
@@ -59,4 +54,4 @@ const characterClick = (e) => {
 }
 
 
-export {charactersBuilder}
+export {charactersBuilder, sortEvents}
