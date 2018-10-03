@@ -1,31 +1,27 @@
 import { printToDom } from "../helpers/util.js";
+import { charactersBuilder } from "./characters.js";
 
-const characterDatas = [
-    {id:'character1', 
-    name: 'Jon Snow', 
-    house: 'Stark', 
-    imageUrl: 'SoIaF.jpg'},
-    {id:'character2', 
-    name: 'Tony Stark', 
-    house: 'Stark', 
-    imageUrl: 'SoIaF.jpg'},
-    {id:'character3', 
-    name: 'Cersei Lannister', 
-    house: 'Lannister', 
-    imageUrl: 'SoIaF.jpg'},
-    {id:'character4', 
-    name: 'Rhaegar Targarian', 
-    house: 'Targarian', 
-    imageUrl: 'SoIaF.jpg'},
-    {id:'character5', 
-    name: 'Tyrion Lannister', 
-    house: 'Lannister', 
-    imageUrl: 'SoIaF.jpg'},
-
-];
+const characterDatas = [ {
+    "id":"character1", 
+    "name": "Jon Snow", 
+    "house": "Stark", 
+    "imageUrl": "SoIaF.jpg"
+},
+{
+    "id":"character2", 
+    "name": "Tony Stark", 
+    "house": "Stark", 
+    "imageUrl": "SoIaF.jpg"
+}];
 
 //event listener for close button
-const close.addEventListener =
+// const close = document.getElementById('close');
+//     close.addEventListener('click', () => {
+//         charactersBuilder();
+//     });
+
+
+
 
 const detailsBuilder = (character) => {
     console.log('character inside details', character)
@@ -46,6 +42,7 @@ const detailsBuilder = (character) => {
     domString += `</div>`
     printToDom(domString, 'printDiv');
     closeButtonEvent();
+    
 }
 
 export {characterDatas, detailsBuilder}
