@@ -2,6 +2,29 @@ import {characterDatas} from './details.js';
 import {printToDom} from '../helpers/util.js';
 import {detailsBuilder} from './details.js';
 
+const createEvents = () => {
+    const characterCards = documnet.getElementsByClassName('character-card');
+    for(let i=0; i<characterCards.length; i++){
+        characterCards[i].addEventListener('click', characterClick);
+    }
+};
+
+const sortPeople = (e) => {
+    const house = e.target.id
+    if(house === 'ALL'){
+        charactersBuilder(characters)
+    } else {
+    const filterPeeps = characters.filter(x => x.house === house);
+    charactersBuilder(filterPeeps);
+    }
+
+};
+
+const sortEvents = () => {
+    const addEventListener 
+}
+
+
 const charactersBuilder = () => {
     let domString = '';
     characterDatas.forEach((character) => {
