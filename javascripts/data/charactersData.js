@@ -1,11 +1,11 @@
 import {charactersBuilder} from '../components/characters.js';
-import {setCharacters} from '../components/details.js';
+import {setCharacters, getCharacterz} from '../components/details.js';
 
 function executeThisCodeAfterFileLoaded () {
     
     const data = JSON.parse(this.responseText);
     setCharacters(data.characters);
-    charactersBuilder();
+    charactersBuilder(getCharacterz());
 }
 
 function executeThisCodeIfXhrFails () {

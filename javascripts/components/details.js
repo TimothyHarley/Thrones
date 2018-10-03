@@ -7,11 +7,17 @@ const setCharacters = (newArray) => {
     characterDatas = newArray;
 };
 
+const getCharacterz = () => {
+
+};
+
 //event listener for close button
-// const close = document.getElementById('close');
-//     close.addEventListener('click', () => {
-//         charactersBuilder();
-//     });
+const closeButtonEvent = () => {
+    const close = document.getElementById('close');
+        close.addEventListener('click', () => {
+            charactersBuilder(getCharacterz());
+        });
+    }
 
 
 
@@ -38,5 +44,5 @@ const detailsBuilder = (character) => {
     
 }
 
-export {characterDatas, detailsBuilder, setCharacters}
+export {characterDatas, detailsBuilder, setCharacters, getCharacterz}
 
