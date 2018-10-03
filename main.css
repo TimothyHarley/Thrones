@@ -1,3 +1,19 @@
 body {
     background-color: slategray;
 }
+
+.card-img-top {
+    height: 280px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 0;
+    margin: 0 auto;
+}
+
+#btnWrap {
+    margin-left: 35%;
+}
+
+button {
+    margin: 4px;
+}

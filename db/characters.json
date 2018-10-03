@@ -4,58 +4,58 @@
             "id":"character1", 
             "name": "Jon Snow", 
             "house": "Stark", 
-            "imageUrl": "SoIaF.jpg"
+            "imageUrl": "./Images/jonSnow.jpg"
         },
         {
             "id":"character2", 
             "name": "Tony Stark", 
             "house": "Stark", 
-            "imageUrl": "SoIaF.jpg"
+            "imageUrl": "./Images/iron-man.jpg"
         },
         {
             "id":"character3", 
             "name": "Cersei Lannister", 
             "house": "Lannister", 
-            "imageUrl": "SoIaF.jpg"
+            "imageUrl": "./Images/Cersei.jpg"
         },
         {
             "id":"character4", 
             "name": "Rhaegar Targaryan", 
             "house": "Targaryan", 
-            "imageUrl": "SoIaF.jpg"
+            "imageUrl": "./Images/Rhaegar.png"
         },
         {
             "id":"character5", 
             "name": "Tyrion Lannister", 
             "house": "Lannister", 
-            "imageUrl": "SoIaF.jpg"
+            "imageUrl": "./Images/Tyrion.jpg"
         },
         {
             "id":"character6", 
             "name": "Daenerys Targaryen", 
             "house": "Targaryan", 
-            "imageUrl": "SoIaF.jpg"
+            "imageUrl": "./Images/Daenerys.jpg"
         },
         {
             "id":"character7", 
             "name": "Arya Stark", 
             "house": "Stark", 
-            "imageUrl": "SoIaF.jpg"
+            "imageUrl": "./Images/Arya.jpg"
         },{
             "id":"character8", 
             "name": "Jaime Lannister", 
             "house": "Lannister", 
-            "imageUrl": "SoIaF.jpg"
+            "imageUrl": "./Images/Jaime.jpg"
         },{
             "id":"character9", 
             "name": "Sansa Stark", 
             "house": "Stark", 
-            "imageUrl": "SoIaF.jpg"
+            "imageUrl": "./Images/Sansa.jpg"
         },{
             "id":"character10", 
             "name": "Tywin Lannister", 
             "house": "Lannister", 
-            "imageUrl": "SoIaF.jpg"
+            "imageUrl": "./Images/Tywin.jpg"
         }
     ]
 }
