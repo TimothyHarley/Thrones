@@ -1,18 +1,11 @@
 import { printToDom } from "../helpers/util.js";
 import { charactersBuilder } from "./characters.js";
 
-const characterDatas = [ {
-    "id":"character1", 
-    "name": "Jon Snow", 
-    "house": "Stark", 
-    "imageUrl": "SoIaF.jpg"
-},
-{
-    "id":"character2", 
-    "name": "Tony Stark", 
-    "house": "Stark", 
-    "imageUrl": "SoIaF.jpg"
-}];
+let characterDatas = [];
+
+const setCharacters = (newArray) => {
+    characterDatas = newArray;
+};
 
 //event listener for close button
 // const close = document.getElementById('close');
@@ -45,5 +38,5 @@ const detailsBuilder = (character) => {
     
 }
 
-export {characterDatas, detailsBuilder}
+export {characterDatas, detailsBuilder, setCharacters}
 
